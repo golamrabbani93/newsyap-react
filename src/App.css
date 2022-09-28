@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+/** ---------------*/
+/* *google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* *Common styles */
+
+/* *color */
+
+.color-primary {
+	color: #5d5fef;
+}
+.color-gray {
+	color: #949494;
+}
+
+/* *fonts size and weights */
+.font-16 {
+	font-size: 16px;
+}
+.font-18 {
+	font-size: 18px;
+}
+/* .font-24{
+    font-size: 23px;
+} */
+
+.fw-400 {
+	font-weight: 400;
+}
+.fw-700 {
+	font-weight: 700;
+}
+.width {
+	width: 225px;
+}
+/* *Header starts */
+.active-link {
+	color: #5d5fef;
+}
+
+.nav-link:hover {
+	color: #5d5fef;
+	text-align: justify;
+}
+
+.justify-text {
+	text-align: justify;
+}
+/* *Header end */
+
+/* *news item starts here */
+.card {
+	margin-bottom: 1rem !important;
+	margin-top: 3rem !important;
+	border: 0 !important;
+	box-shadow: 1px 3px 10px #949494;
+	padding: 1rem;
+}
+.card-title {
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+.card-title:hover {
+	color: #5d5fef;
+}
+.author-img > img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.details-btn > button,
+.modal-footer > button {
+	color: #5d5fef;
+}
+.details-btn > button:hover,
+.modal-footer > button:hover {
+	color: #5d5fef;
+}
+
+/* *news item Ends here */
+
+/* *Responsive starts */
+/*
+ *Responsive
+ */
+@media (min-width: 1024px) {
+	.font-10 {
+		font-size: 12px;
+	}
+	.font-16 {
+		font-size: 16px;
+	}
+	.font-18 {
+		font-size: 18px;
+	}
+	.font-24 {
+		font-size: 20px;
+	}
+	.pl {
+		padding-left: 5rem;
+	}
+}
+@media (max-width: 768px) {
+	.font-10 {
+		font-size: 10px;
+	}
+	.font-16 {
+		font-size: 10px;
+	}
+	.font-18 {
+		font-size: 12px;
+	}
+	.font-24 {
+		font-size: 18px;
+	}
+}
+@media (max-width: 480px) {
+	.font-10 {
+		font-size: 5px;
+	}
+	.font-16 {
+		font-size: 7px;
+	}
+	.font-24 {
+		font-size: 14px;
+	}
+	.font-18 {
+		font-size: 12px;
+	}
+	.author-img > img {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+	}
 }
